@@ -146,12 +146,12 @@ public class Computadoras {
 
     @Override
     public String toString() {
-        return "\nTamaño de La Pantalla: " + tam_pantalla 
-                + "\nCapacidad del Disco: " + cap_disco 
+        return "\nTamaño de La Pantalla: " + tam_pantalla +"''"
+                + "\nCapacidad del Disco: " + cap_disco +"GB"
                 + "\nNumero de Serie: " + num_serie 
-                + "\nCapacidad de Bateria: " + cap_bateria 
-                + "\nDuracion de Bateria" + dur_bateria 
-                + "\nTiempo De Fabricacion" + time_fab 
+                + "\nCapacidad de Bateria: " + cap_bateria +"mAh"
+                + "\nDuracion de Bateria" + dur_bateria +"hrs"
+                + "\nTiempo De Fabricacion" + time_fab +"hrs"
                 + "\nModelo de la PC: " + modelo 
                 + "\nTipo de Procesador: " + tipo_pocesador 
                 + "\nTarjeta Grafica: " + tarjeta_grafica 

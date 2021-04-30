@@ -8,7 +8,7 @@ public class Lab2P2_VictorCruz {
         int opcion = 0;
         while (opcion != 3) {
             System.out.println("***MENU ADMINISTRATIVO***");
-            System.out.println("BIENVENIDO ADMIN!!!");
+            System.out.println("***BIENVENIDO ADMIN***");
             System.out.println("1. Reporte de los Computadoras\n"
                     + "2. Manejo de Computadoras\n"
                     + "3. Salir\n");
@@ -34,7 +34,7 @@ public class Lab2P2_VictorCruz {
                                     
                                      System.out.println(i+")"+compus.get(i));
                                 }else{
-                                    System.out.println("No imprime Nada");
+                                    System.out.println("No  se imprime Nada M8");
                                 }//fin de la condicion
                             }//fin del for
                             break;
@@ -46,7 +46,7 @@ public class Lab2P2_VictorCruz {
                                     
                                      System.out.println(i+")"+compus.get(i));
                                 }else{
-                                    System.out.println("No imprime Nada");
+                                    System.out.println("No se imprime Nada M8");
                                 }//fin de la condicion
                             }//fin del for
                             
@@ -59,7 +59,7 @@ public class Lab2P2_VictorCruz {
                                     
                                      System.out.println(i+")"+compus.get(i));
                                 }else{
-                                    System.out.println("No imprime Nada");
+                                    System.out.println("No se imprime Nada M8");
                                 }//fin de la condicion
                             }//fin del for
                             break;
@@ -69,8 +69,6 @@ public class Lab2P2_VictorCruz {
                     }//fin del switch de los Reportes
                     }//fin de la condicion
                     break;//fin del case Reportes
-                    
-                    
                 case 2:
                     System.out.println("1. Agregar Computadoras\n"
                             + "2. Modifcar Computadoras\n"
@@ -88,8 +86,14 @@ public class Lab2P2_VictorCruz {
                             tam_pantalla = sc.nextInt();
                             System.out.println("Ingrese La capacidad del Disco Duro(en GB): ");
                             cap_disco = sc.nextInt();
-                            System.out.println("Ingrese el Numero de serie: ");
-                            num_serie = sc.nextInt();
+                            System.out.println("Ingrese el numero de serie: ");
+                            num_serie =sc .nextInt(); 
+                            for (int i = 0; i < compus.size(); i++) {
+                                while (compus.get(i).getNum_serie()== num_serie) {
+                                    System.out.println("El numero de serie que ingreso ya existe porfavor ingrese otro: ");
+                                    num_serie = sc.nextInt();
+                                }//fin del while
+                            }//fin del for que recorre la lista para validar el numero de serie
                             System.out.println("Ingrese la Capacidad de la Bateria: ");
                             cap_bateria = sc.nextInt();
                             System.out.println("Ingrese la duracion de su Bateria(en horas): ");
