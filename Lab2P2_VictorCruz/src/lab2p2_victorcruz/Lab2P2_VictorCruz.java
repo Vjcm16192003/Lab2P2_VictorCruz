@@ -152,16 +152,16 @@ public class Lab2P2_VictorCruz {
                                 System.out.println("\nModificando...");
                                 int opc3 = 0;
                                 System.out.println("***MENU***");
-                                System.out.println("1. Tam. Pantalla"
-                                        + "2. Capacidad Disco Duro"
-                                        + "3. Capacidad Bateria"
-                                        + "4. Duracion Bateria"
-                                        + "5. Tiempo de Fabricacion"
-                                        + "6. Modelo de Computadora"
-                                        + "7. Tipo de Procesador"
-                                        + "8. Tipo de Tarjeta Grafica"
-                                        + "9. Tipo de Sistema Operativo"
-                                        + "10. Teclado Numerico");
+                                System.out.println("1. Tam. Pantalla\n"
+                                        + "2. Capacidad Disco Duro\n"
+                                        + "3. Capacidad Bateria\n"
+                                        + "4. Duracion Bateria\n"
+                                        + "5. Tiempo de Fabricacion\n"
+                                        + "6. Modelo de Computadora\n"
+                                        + "7. Tipo de Procesador\n"
+                                        + "8. Tipo de Tarjeta Grafica\n"
+                                        + "9. Tipo de Sistema Operativo\n"
+                                        + "10. Teclado Numerico\n");
                                 System.out.println("Ingrese Atributo a Modificar");
                                 switch (opc3) {
                                     case 1:
